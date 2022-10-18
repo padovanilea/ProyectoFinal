@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    HOLA ESTO ES UN SALUDO DESDE UN TEMPLATE!!!!
+    El usuario es {{nombre}} {{apellido}}, tiene {{edad}} años y un indice de masa corporal de {{ind_m_c}}
+    
+    {% for nota in notas %}
+        <br>
+        {{nota}}
+    {% endfor %}
+
 </body>
 </html>
