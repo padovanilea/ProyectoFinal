@@ -11,8 +11,16 @@
     
     {% for nota in notas %}
         <br>
-        {{nota}}
+        {% if nota > 7 %}
+            <p style ="color:darkgreen"> Nota buena {{nota}} </p>
+           
+        {% else %}
+            <p style ="color:red"> Nota mala {{nota}} </p>
+        
+        {% endif %}
     {% endfor %}
+        <br>
+    El usuario seleccionado es: {{usuario}}
 
 </body>
 </html>
