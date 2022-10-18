@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import random
+from ejemplo.models import Familiar
 
 # Create your views here.
 def index(request,nombre,apellido,peso,altura):
@@ -18,3 +19,7 @@ def index3(request):
     a=["Leandro","Sebastian","Marcos"]
     selecto = random.choice(a)
     return render(request, "ejemplo/saludar.html", {"usuario":selecto})
+
+def mostrar_familiares(request):
+  lista_familiares = Familiar.objects.all()
+  return render(request, "ejemplo/familiares.html", {"lista_familiares": lista_familiares})
