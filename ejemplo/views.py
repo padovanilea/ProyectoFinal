@@ -1,11 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 import random
 from ejemplo.models import Familiar
-from ejemplo.forms import Buscar, FamiliarForm # <--- NUEVO IMPORT
-from django.views import View # <-- NUEVO IMPORT
+from ejemplo.forms import Buscar, FamiliarForm
+from django.views import View
+from django.views.generic import ListView, CreateView, DeleteView, UpdateView
 
-
-# Create your views here.
 def index(request,nombre,apellido,peso,altura):
     años = 47
     pesof = float(peso) #kg
@@ -93,3 +92,20 @@ class ActualizarFamiliar(View):
                                                       'msg_exito': msg_exito})
       
         return render(request, self.template_name, {"form": form})
+
+class FamiliarList(ListView):
+    model = Familiar
+
+class FamiliarCrear(CreateView):
+    model = Familiar
+    success_url = "/panel-familia"
+    fields = ["nombre", "direccion", "numero_pasaporte"]
+
+class FamiliarBorrar(DeleteView):
+    model = Familiar
+    success_url = "/panel-familia"
+
+class FamiliarActualizar(UpdateView):
+    model = Familiar
+    success_url = "/panel-familia"
+    fields = ["nombre", "direccion", "numero_pasaporte"]
