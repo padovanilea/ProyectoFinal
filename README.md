@@ -5,7 +5,7 @@ En este instructivo se indican las funcionalidades y el orden de ejecución de l
 
 ## Descripción:
 El aplicativo consiste en la carga de una base de datos con los nombres de los familiares, la cual puede ser accedida para carga y consulta desde una web.
-Los formularios alta_familiar.html, buscar.html y actualizar_familiar, heredan de base.html.
+Los formularios alta_familiar.html, buscar.html y actualizar_familiar.html, heredan de base.html.
 Hay 3 campos en el formulario de familiares: Nombre, dirección y pasaporte.
 
 ## Procedimiento:

@@ -10,9 +10,11 @@
 
     <form method="post">
         {% csrf_token %}
-        "¿ Estás seguro de borrar el familiar {{ object }} ?"
-        <input type="submit" value="SI">
+        {{form.as_p}} <!-- as_p es la manera en la que se va a listar. En este caso es uno abajo del otro. Puede ser as_list también -->
+        <input type="submit" value="Actualizar">
+       
     </form>
+    <a href ="{% url 'familiar-listar' %}">Volver</a>
 
 </body>
 </html>
