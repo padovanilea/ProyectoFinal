@@ -1,5 +1,10 @@
 # ProyectoFinal
 
+Ver README.md dentro de travesias
+
+
+# ProyectoFinal - Pruebas
+
 Primera entrega de proyecto final
 En este instructivo se indican las funcionalidades y el orden de ejecución de las mismas
 
