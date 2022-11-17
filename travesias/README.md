@@ -17,16 +17,17 @@ En esta sección se describen las características detalladas de esta prueba.
 También existe la posibilidad de descargar un folleto de la prueba.
 
 - 040-Inscripción
-Esta sección es para registrar a los inscriptos
+Esta sección es para registrar a los inscriptos.
+Tambien podemos hacer el login desde aca.
 
 - 041-Inscripción - Lista de competidores
 En esta subsección se pueden visualizar a los inscriptos
 
-- 042-Inscripción - Alta de competidores
-En esta subsección se pueden dar de alta nuevos competidores
+- 042-Inscripción - Alta de competidores y Modificación de competidores
+En esta subsección se pueden dar de alta nuevos competidores y modificar los existentes (por el admin).
 
-- 043-Inscripción - Modificación de competidores
-En esta subsección se pueden modificar los datos de los competidores
+- 043-Inscripción - Reserva
+Por ahora dejamos vacio
 
 - 044-Inscripción - Baja de competidores
 En esta subsección se pueden dar de baja a los competidores
