@@ -7,14 +7,17 @@ El mismo está organizado en distintas secciones:
 
 - 010-Indice
 En esta sección de inicio hay una breve descrición de quienes somos, que hacemos y nuestra propuesta para este verano.
+Esta seccion para nosotros seria un ListView
 
 - 020-3islas
 En esta sección se describen las características detalladas de esta prueba.
-También existe la posibilidad de descargar un folleto de la prueba.
+También existe la posibilidad de descargar un folleto(archivo pdf) de la prueba.
+Esto seria para nosotros un DetailView.
 
 - 030-Moreno
 En esta sección se describen las características detalladas de esta prueba.
-También existe la posibilidad de descargar un folleto de la prueba.
+También existe la posibilidad de descargar un folleto(archivo pdf) de la prueba.
+Esto seria para nosotros un DetailView
 
 - 040-Inscripción
 Esta sección es para registrar a los inscriptos.
